@@ -118,3 +118,115 @@ class LetterH extends FlxSprite
 		super.update(elapsed);
 	}
 }
+
+class LetterI extends FlxSprite
+{
+	public function new()
+	{
+		super();
+		this.loadGraphic(AssetPaths.iBlocc__png);
+	}
+
+	override function update(elapsed:Float)
+	{
+		super.update(elapsed);
+	}
+}
+
+class LetterJ extends FlxSprite
+{
+	public function new()
+	{
+		super();
+		this.loadGraphic(AssetPaths.jBlocc__png);
+	}
+
+	override function update(elapsed:Float)
+	{
+		super.update(elapsed);
+	}
+}
+
+class LetterK extends FlxSprite
+{
+	public function new()
+	{
+		super();
+		this.loadGraphic(AssetPaths.kBlocc__png);
+	}
+
+	override function update(elapsed:Float)
+	{
+		super.update(elapsed);
+	}
+}
+
+class LetterL extends FlxSprite
+{
+	public function new()
+	{
+		super();
+		this.loadGraphic(AssetPaths.lBlocc__png);
+	}
+
+	override function update(elapsed:Float)
+	{
+		super.update(elapsed);
+	}
+}
+
+class LetterM extends FlxSprite
+{
+	public function new()
+	{
+		super();
+		this.loadGraphic(AssetPaths.mBlocc__png);
+	}
+
+	override function update(elapsed:Float)
+	{
+		super.update(elapsed);
+	}
+}
+
+class LetterN extends FlxSprite
+{
+	public function new()
+	{
+		super();
+		this.loadGraphic(AssetPaths.nBlocc__png);
+	}
+
+	override function update(elapsed:Float)
+	{
+		super.update(elapsed);
+	}
+}
+
+class LetterO extends FlxSprite
+{
+	public function new()
+	{
+		super();
+		this.loadGraphic(AssetPaths.oBlocc__png);
+	}
+
+	override function update(elapsed:Float)
+	{
+		super.update(elapsed);
+	}
+}
+
+class LetterP extends FlxSprite
+{
+	public function new()
+	{
+		super();
+		this.loadGraphic(AssetPaths.pBlocc__png);
+	}
+
+	override function update(elapsed:Float)
+	{
+		super.update(elapsed);
+	}
+}
