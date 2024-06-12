@@ -230,3 +230,143 @@ class LetterP extends FlxSprite
 		super.update(elapsed);
 	}
 }
+
+class LetterQ extends FlxSprite
+{
+	public function new()
+	{
+		super();
+		this.loadGraphic(AssetPaths.pBlocc__png);
+	}
+
+	override function update(elapsed:Float)
+	{
+		super.update(elapsed);
+	}
+}
+
+class LetterR extends FlxSprite
+{
+	public function new()
+	{
+		super();
+		this.loadGraphic(AssetPaths.pBlocc__png);
+	}
+
+	override function update(elapsed:Float)
+	{
+		super.update(elapsed);
+	}
+}
+
+class LetterS extends FlxSprite
+{
+	public function new()
+	{
+		super();
+		this.loadGraphic(AssetPaths.pBlocc__png);
+	}
+
+	override function update(elapsed:Float)
+	{
+		super.update(elapsed);
+	}
+}
+
+class LetterT extends FlxSprite
+{
+	public function new()
+	{
+		super();
+		this.loadGraphic(AssetPaths.pBlocc__png);
+	}
+
+	override function update(elapsed:Float)
+	{
+		super.update(elapsed);
+	}
+}
+
+class LetterU extends FlxSprite
+{
+	public function new()
+	{
+		super();
+		this.loadGraphic(AssetPaths.pBlocc__png);
+	}
+
+	override function update(elapsed:Float)
+	{
+		super.update(elapsed);
+	}
+}
+
+class LetterV extends FlxSprite
+{
+	public function new()
+	{
+		super();
+		this.loadGraphic(AssetPaths.pBlocc__png);
+	}
+
+	override function update(elapsed:Float)
+	{
+		super.update(elapsed);
+	}
+}
+
+class LetterW extends FlxSprite
+{
+	public function new()
+	{
+		super();
+		this.loadGraphic(AssetPaths.pBlocc__png);
+	}
+
+	override function update(elapsed:Float)
+	{
+		super.update(elapsed);
+	}
+}
+
+class LetterX extends FlxSprite
+{
+	public function new()
+	{
+		super();
+		this.loadGraphic(AssetPaths.pBlocc__png);
+	}
+
+	override function update(elapsed:Float)
+	{
+		super.update(elapsed);
+	}
+}
+
+class LetterY extends FlxSprite
+{
+	public function new()
+	{
+		super();
+		this.loadGraphic(AssetPaths.pBlocc__png);
+	}
+
+	override function update(elapsed:Float)
+	{
+		super.update(elapsed);
+	}
+}
+
+class LetterZ extends FlxSprite
+{
+	public function new()
+	{
+		super();
+		this.loadGraphic(AssetPaths.pBlocc__png);
+	}
+
+	override function update(elapsed:Float)
+	{
+		super.update(elapsed); // Too lazy to export all of the blocks rn. Ill  have to make up for it on Day 4
+	}
+}

@@ -3,6 +3,7 @@ package states.chooseLetter;
 import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.FlxState;
+import obj.Functions;
 import obj.Letters;
 
 class ChooseLetterState2 extends FlxState
@@ -16,7 +17,7 @@ class ChooseLetterState2 extends FlxState
 	var letterO:FlxSprite;
 	var letterP:FlxSprite;
 
-	var bg:FlxSprite = new FlxSprite(0, 0, AssetPaths.bg__png);
+	var bg:FlxSprite = new FlxSprite(0, -85, AssetPaths.trashCanBG__png);
 
 	var blocksChosen:Bool = false;
 	var blocksChosen2:Bool = false;
@@ -24,6 +25,7 @@ class ChooseLetterState2 extends FlxState
 	var blocksChosen4:Bool = false;
 
 	var seperateAmount:Int = 160;
+	var aletterYs:Int = 550;
 
 	override function create()
 	{
@@ -31,27 +33,35 @@ class ChooseLetterState2 extends FlxState
 
 		letterI = new LetterI();
 		letterI.x = 0;
+		letterI.y = aletterYs;
 
 		letterJ = new LetterJ();
 		letterJ.x = letterI.x + seperateAmount;
+		letterJ.y = aletterYs;
 
 		letterK = new LetterK();
 		letterK.x = letterJ.x + seperateAmount;
+		letterK.y = aletterYs;
 
 		letterL = new LetterL();
 		letterL.x = letterK.x + seperateAmount;
+		letterL.y = aletterYs;
 
 		letterM = new LetterM();
 		letterM.x = letterL.x + seperateAmount;
+		letterM.y = aletterYs;
 
 		letterN = new LetterN();
 		letterN.x = letterM.x + seperateAmount;
+		letterN.y = aletterYs;
 
 		letterO = new LetterO();
 		letterO.x = letterN.x + seperateAmount;
+		letterO.y = aletterYs;
 
 		letterP = new LetterP();
 		letterP.x = letterO.x + seperateAmount;
+		letterP.y = aletterYs;
 
 		add(bg);
 	}
@@ -139,6 +149,42 @@ class ChooseLetterState2 extends FlxState
 			case 100:
 				add(letterP);
 				blocksChosen4 = true;
+		}
+
+		if (FlxG.mouse.overlaps(letterI))
+		{
+			Functions.addBlockToInventory(9);
+		}
+		else if (FlxG.mouse.overlaps(letterM))
+		{
+			Functions.addBlockToInventory(13);
+		}
+
+		if (FlxG.mouse.overlaps(letterJ))
+		{
+			Functions.addBlockToInventory(10);
+		}
+		else if (FlxG.mouse.overlaps(letterN))
+		{
+			Functions.addBlockToInventory(14);
+		}
+
+		if (FlxG.mouse.overlaps(letterK))
+		{
+			Functions.addBlockToInventory(11);
+		}
+		else if (FlxG.mouse.overlaps(letterO))
+		{
+			Functions.addBlockToInventory(15);
+		}
+
+		if (FlxG.mouse.overlaps(letterL))
+		{
+			Functions.addBlockToInventory(12);
+		}
+		else if (FlxG.mouse.overlaps(letterP))
+		{
+			Functions.addBlockToInventory(16);
 		}
 
 		if (FlxG.keys.justPressed.BACKSPACE) // Gunna remove this later when I add a back button
