@@ -151,40 +151,48 @@ class ChooseLetterState2 extends FlxState
 				blocksChosen4 = true;
 		}
 
-		if (FlxG.mouse.overlaps(letterI))
+		if (FlxG.mouse.overlaps(letterI) && FlxG.mouse.justPressed)
 		{
 			Functions.addBlockToInventory(9);
+			remove(letterI);
 		}
-		else if (FlxG.mouse.overlaps(letterM))
+		else if (FlxG.mouse.overlaps(letterM) && FlxG.mouse.justPressed)
 		{
 			Functions.addBlockToInventory(13);
+			remove(letterM);
 		}
 
-		if (FlxG.mouse.overlaps(letterJ))
+		if (FlxG.mouse.overlaps(letterJ) && FlxG.mouse.justPressed)
 		{
 			Functions.addBlockToInventory(10);
+			remove(letterJ);
 		}
-		else if (FlxG.mouse.overlaps(letterN))
+		else if (FlxG.mouse.overlaps(letterN) && FlxG.mouse.justPressed)
 		{
 			Functions.addBlockToInventory(14);
+			remove(letterN);
 		}
 
-		if (FlxG.mouse.overlaps(letterK))
+		if (FlxG.mouse.overlaps(letterK) && FlxG.mouse.justPressed)
 		{
 			Functions.addBlockToInventory(11);
+			remove(letterK);
 		}
-		else if (FlxG.mouse.overlaps(letterO))
+		else if (FlxG.mouse.overlaps(letterO) && FlxG.mouse.justPressed)
 		{
 			Functions.addBlockToInventory(15);
+			remove(letterO);
 		}
 
-		if (FlxG.mouse.overlaps(letterL))
+		if (FlxG.mouse.overlaps(letterL) && FlxG.mouse.justPressed)
 		{
 			Functions.addBlockToInventory(12);
+			remove(letterL);
 		}
-		else if (FlxG.mouse.overlaps(letterP))
+		else if (FlxG.mouse.overlaps(letterP) && FlxG.mouse.justPressed)
 		{
 			Functions.addBlockToInventory(16);
+			remove(letterP);
 		}
 
 		if (FlxG.keys.justPressed.BACKSPACE) // Gunna remove this later when I add a back button

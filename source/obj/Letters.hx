@@ -9,6 +9,8 @@ class Letters
 
 class LetterA extends FlxSprite
 {
+	public static var text:String = "a";
+
 	public function new()
 	{
 		super();
@@ -23,6 +25,8 @@ class LetterA extends FlxSprite
 
 class LetterB extends FlxSprite
 {
+	public static var text:String = "b";
+
 	public function new()
 	{
 		super();
@@ -37,6 +41,8 @@ class LetterB extends FlxSprite
 
 class LetterC extends FlxSprite
 {
+	public static var text:String = "c";
+
 	public function new()
 	{
 		super();
@@ -51,6 +57,8 @@ class LetterC extends FlxSprite
 
 class LetterD extends FlxSprite
 {
+	public static var text:String = "d";
+
 	public function new()
 	{
 		super();
@@ -65,6 +73,8 @@ class LetterD extends FlxSprite
 
 class LetterE extends FlxSprite
 {
+	public static var text:String = "e";
+
 	public function new()
 	{
 		super();
@@ -79,6 +89,8 @@ class LetterE extends FlxSprite
 
 class LetterF extends FlxSprite
 {
+	public static var text:String = "f";
+
 	public function new()
 	{
 		super();
@@ -93,6 +105,8 @@ class LetterF extends FlxSprite
 
 class LetterG extends FlxSprite
 {
+	public static var text:String = "g";
+
 	public function new()
 	{
 		super();
@@ -107,6 +121,8 @@ class LetterG extends FlxSprite
 
 class LetterH extends FlxSprite
 {
+	public static var text:String = "h";
+
 	public function new()
 	{
 		super();
@@ -121,6 +137,8 @@ class LetterH extends FlxSprite
 
 class LetterI extends FlxSprite
 {
+	public static var text:String = "i";
+
 	public function new()
 	{
 		super();
@@ -135,6 +153,8 @@ class LetterI extends FlxSprite
 
 class LetterJ extends FlxSprite
 {
+	public static var text:String = "j";
+
 	public function new()
 	{
 		super();
@@ -149,6 +169,8 @@ class LetterJ extends FlxSprite
 
 class LetterK extends FlxSprite
 {
+	public static var text:String = "k";
+
 	public function new()
 	{
 		super();
@@ -163,6 +185,8 @@ class LetterK extends FlxSprite
 
 class LetterL extends FlxSprite
 {
+	public static var text:String = "l";
+
 	public function new()
 	{
 		super();
@@ -177,6 +201,8 @@ class LetterL extends FlxSprite
 
 class LetterM extends FlxSprite
 {
+	public static var text:String = "m";
+
 	public function new()
 	{
 		super();
@@ -191,6 +217,8 @@ class LetterM extends FlxSprite
 
 class LetterN extends FlxSprite
 {
+	public static var text:String = "n";
+
 	public function new()
 	{
 		super();
@@ -205,6 +233,8 @@ class LetterN extends FlxSprite
 
 class LetterO extends FlxSprite
 {
+	public static var text:String = "o";
+
 	public function new()
 	{
 		super();
@@ -219,6 +249,8 @@ class LetterO extends FlxSprite
 
 class LetterP extends FlxSprite
 {
+	public static var text:String = "p";
+
 	public function new()
 	{
 		super();
@@ -233,10 +265,12 @@ class LetterP extends FlxSprite
 
 class LetterQ extends FlxSprite
 {
+	public static var text:String = "q";
+
 	public function new()
 	{
 		super();
-		this.loadGraphic(AssetPaths.pBlocc__png);
+		this.loadGraphic(AssetPaths.qBlocc__png);
 	}
 
 	override function update(elapsed:Float)
@@ -247,10 +281,12 @@ class LetterQ extends FlxSprite
 
 class LetterR extends FlxSprite
 {
+	public static var text:String = "r";
+
 	public function new()
 	{
 		super();
-		this.loadGraphic(AssetPaths.pBlocc__png);
+		this.loadGraphic(AssetPaths.rBlocc__png);
 	}
 
 	override function update(elapsed:Float)
@@ -261,10 +297,12 @@ class LetterR extends FlxSprite
 
 class LetterS extends FlxSprite
 {
+	public static var text:String = "s";
+
 	public function new()
 	{
 		super();
-		this.loadGraphic(AssetPaths.pBlocc__png);
+		this.loadGraphic(AssetPaths.sBlocc__png);
 	}
 
 	override function update(elapsed:Float)
@@ -275,10 +313,12 @@ class LetterS extends FlxSprite
 
 class LetterT extends FlxSprite
 {
+	public static var text:String = "t";
+
 	public function new()
 	{
 		super();
-		this.loadGraphic(AssetPaths.pBlocc__png);
+		this.loadGraphic(AssetPaths.tBlocc__png);
 	}
 
 	override function update(elapsed:Float)
@@ -289,10 +329,12 @@ class LetterT extends FlxSprite
 
 class LetterU extends FlxSprite
 {
+	public static var text:String = "u";
+
 	public function new()
 	{
 		super();
-		this.loadGraphic(AssetPaths.pBlocc__png);
+		this.loadGraphic(AssetPaths.uBlocc__png);
 	}
 
 	override function update(elapsed:Float)
@@ -303,10 +345,12 @@ class LetterU extends FlxSprite
 
 class LetterV extends FlxSprite
 {
+	public static var text:String = "v";
+
 	public function new()
 	{
 		super();
-		this.loadGraphic(AssetPaths.pBlocc__png);
+		this.loadGraphic(AssetPaths.vBlocc__png);
 	}
 
 	override function update(elapsed:Float)
@@ -317,10 +361,12 @@ class LetterV extends FlxSprite
 
 class LetterW extends FlxSprite
 {
+	public static var text:String = "w";
+
 	public function new()
 	{
 		super();
-		this.loadGraphic(AssetPaths.pBlocc__png);
+		this.loadGraphic(AssetPaths.wBlocc__png);
 	}
 
 	override function update(elapsed:Float)
@@ -331,10 +377,12 @@ class LetterW extends FlxSprite
 
 class LetterX extends FlxSprite
 {
+	public static var text:String = "x";
+
 	public function new()
 	{
 		super();
-		this.loadGraphic(AssetPaths.pBlocc__png);
+		this.loadGraphic(AssetPaths.xBlocc__png);
 	}
 
 	override function update(elapsed:Float)
@@ -345,10 +393,12 @@ class LetterX extends FlxSprite
 
 class LetterY extends FlxSprite
 {
+	public static var text:String = "y";
+
 	public function new()
 	{
 		super();
-		this.loadGraphic(AssetPaths.pBlocc__png);
+		this.loadGraphic(AssetPaths.yBlocc__png);
 	}
 
 	override function update(elapsed:Float)
@@ -359,14 +409,16 @@ class LetterY extends FlxSprite
 
 class LetterZ extends FlxSprite
 {
+	public static var text:String = "z";
+
 	public function new()
 	{
 		super();
-		this.loadGraphic(AssetPaths.pBlocc__png);
+		this.loadGraphic(AssetPaths.zBlocc__png);
 	}
 
 	override function update(elapsed:Float)
 	{
-		super.update(elapsed); // Too lazy to export all of the blocks rn. Ill  have to make up for it on Day 4
+		super.update(elapsed); // Too lazy to export all of the blocks rn. Ill  have to make up for it on Day 4 // Fuck you past Ethan now I have to do this now >:(
 	}
 }

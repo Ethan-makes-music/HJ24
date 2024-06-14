@@ -4,6 +4,8 @@ import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.FlxState;
 import flixel.tweens.FlxTween;
+import obj.Functions;
+import obj.Letters;
 
 class PlayState extends FlxState
 {
@@ -16,6 +18,12 @@ class PlayState extends FlxState
 
 	var inventoryOpen:Bool = false;
 
+	var saveData:Int = 0;
+
+	var letterA:FlxSprite;
+
+	var fullText:String = "";
+
 	override public function create()
 	{
 		super.create();
@@ -24,12 +32,51 @@ class PlayState extends FlxState
 		add(counter);
 		add(fridge);
 		add(trashCan);
-		add(inventory);
+
+		// Bind the save data
+		Functions.inventorySave.bind("inventorySave");
+
+		// Initialize saveData
+		if (Functions.inventorySave.data.aSlot != null)
+		{
+			saveData = Functions.inventorySave.data.aSlot;
+		}
+		else
+		{
+			Functions.inventorySave.data.aSlot = 0;
+			Functions.inventorySave.flush();
+		}
 	}
 
 	override public function update(elapsed:Float)
 	{
 		super.update(elapsed);
+
+		// Update saveData if it has changed
+		if (Functions.inventorySave.data.aSlot != saveData)
+		{
+			saveData = Functions.inventorySave.data.aSlot;
+		}
+
+		if (saveData == 5)
+		{
+			letterA = new LetterA();
+			letterA.x = inventory.x;
+			letterA.y = inventory.y;
+			if (inventoryOpen)
+			{
+				add(letterA);
+			}
+
+			if (!inventoryOpen)
+			{
+				remove(letterA); // WHY THE FUCK WONT THE A REMOVE!!!
+			}
+		}
+		else
+		{
+			remove(trashCan);
+		}
 
 		if (FlxG.mouse.overlaps(lamp) && FlxG.mouse.justPressed)
 		{
@@ -40,25 +87,31 @@ class PlayState extends FlxState
 			FlxG.switchState(new states.chooseLetter.ChooseLetterState2());
 		}
 
-		if (FlxG.keys.justPressed.I && inventoryOpen == false)
+		if (FlxG.keys.justPressed.I && !inventoryOpen)
 		{
-			// openInventory(); Only use for tweening
 			inventory.x = 384;
 			inventory.y = 40;
 			inventoryOpen = true;
+			add(inventory);
 		}
-		else if (FlxG.keys.justPressed.I && inventoryOpen == true)
+		else if (FlxG.keys.justPressed.I && inventoryOpen)
 		{
 			inventory.x = 1309;
 			inventory.y = 40;
 			inventoryOpen = false;
+			remove(letterA);
+			remove(inventory);
+		}
+
+		if (FlxG.keys.pressed.BACKSPACE && FlxG.keys.pressed.SEVEN)
+		{
+			Functions.inventorySave.erase();
 		}
 	}
 
 	function openInventory()
 	{
-		// var inventoryOpen:Bool = false; // Setup for tweening
-		if (inventoryOpen == false)
+		if (!inventoryOpen)
 		{
 			inventory.x = 384;
 			inventory.y = 40;
